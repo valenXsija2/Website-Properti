@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>BP — Website Properti</title>
+  <meta name="description" content="Situs contoh modern, responsif, dengan mode gelap.">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">
+        <img src="asset/BP-hitam.svg" alt="">	
+      </a>
+
+      <button
+        id="navToggle"
+        class="nav-toggle"
+        aria-label="Buka menu"
+        aria-expanded="false">
+        ☰
+      </button>
+
+      <nav class="nav" id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="#features">Fitur</a>
+        <a href="#about">Tentang</a>
+        <a href="#contact">Kontak</a>
+		<a href=""><img src="asset/Bot-icon.svg" alt=""></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>JEJAK WARISAN, STANDAR KEMEWAHAN</h1>
+          <p class="lead">
+            Investasi abadi dan hunian impian Anda, terintegrasi sempurna dengan gaya hidup Anda.
+          </p>
+
+          <p class="hero-cta">
+            <a class="btn btn-1" href="#contact">Cari Sekarang</a>
+            <a class="btn btn-outline" href="#features">Lihat Fitur</a>
+            <a class="btn btn-outline" href="#features">Hubungi Kami</a>
+          </p>
+
+          <div class="features-inline">
+            <div class="feature-inline">
+              <img src="asset/price-logo.svg" alt="">
+              <p>
+                <strong>Murah</strong><br>
+                <span class="muted">Harga Paling Terjangkau</span>
+              </p>
+            </div>
+
+            <div class="feature-inline">
+              <img src="asset/safety-logo.svg" alt="">
+              <p>
+                <strong>Aman</strong><br>
+                <span class="muted">Tempat Nyaman & Aman</span>
+              </p>
+            </div>
+
+            <div class="feature-inline">
+              <img src="asset/aesthetic-logo.svg" alt="">
+              <p>
+                <strong>Aesthetic</strong><br>
+                <span class="muted">Desain Modern & Menarik</span>
+              </p>
+            </div>
+
+            <div class="feature-inline">
+				<img src="asset/strategis-logo.svg" alt="">
+              <p>
+                <strong>Strategis</strong><br>
+                <span class="muted">Lokasi Mudah Diakses</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-media">
+			<img src="asset/image-home.svg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="features">
+      <div class="container">
+        <h1 class="section-title">Fitur Utama</h1>
+
+        <div class="grid">
+          <article class="feature">
+            <h3>AI Chat Box</h3>
+            <p>Chatbox ini membantu Anda menemukan dan menganalisis rumah pilihan Anda.</p>
+          </article>
+
+          <article class="feature">
+            <h3>Jual/Sewa</h3>
+            <p>Fitur ini membantu Anda menjual, menyewakan, dan mengelola properti dengan mudah.</p>
+          </article>
+
+          <article class="feature">
+            <h3>Beli</h3>
+            <p>Fitur ini membantu Anda mencari, melihat, dan mengelola properti pilihan Anda.</p>
+          </article>
+
+          <article class="feature">
+            <h3>Maps</h3>
+            <p>Fitur ini membantu Anda melihat lingkungan sekitar rumah pilihan Anda.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+      <div class="container">
+        <h1 class="section-title">Tentang</h1>
+        <p class="muted">
+          Kami bergerak dalam bidang penyediaan hunian berkualitas yang menjembatani kenyamanan modern dan ketenangan privat. Kami hadir untuk membantu Anda memilih tempat di mana hidup dimulai, keluarga bertumbuh, dan nilai investasi terjaga.
+        </p>
+		<div class="image">wdwdwdwd</div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+      <div class="container contact-inner">
+        <div class="contact-card">
+          <h2>Hubungi Kami</h2>
+
+          <form id="contactForm">
+            <label>
+              Nama
+              <input type="text" name="name" required>
+            </label>
+
+            <label>
+              Email
+              <input type="email" name="email" required>
+            </label>
+
+            <label>
+              Pesan
+              <textarea name="message" rows="4" required></textarea>
+            </label>
+
+            <div class="form-actions">
+              <button type="submit" class="btn">Kirim</button>
+              <button type="reset" class="btn btn-ghost">Reset</button>
+            </div>
+          </form>
+        </div>
+
+        <aside class="contact-aside">
+          <h3>Siap membantu</h3>
+          <p>
+            Kami dapat membantu anda mencari rumah, properti, atau investasi yang sesuai dengan kebutuhan dan keinginan anda. Jangan ragu untuk menghubungi kami kapan saja.
+          </p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> BP — hak cipta milik tuhan.</p>
+      <p class="muted">Dibuat dengan bantuan tuhan</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

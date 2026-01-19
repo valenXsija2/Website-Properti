@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Blog — BP</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">BP</a>
+      <button id="navToggle" class="nav-toggle" aria-label="Buka menu" aria-expanded="false">☰</button>
+      <nav class="nav" id="mainNav">
+        <a href="blog.html">Blog</a>
+        <a href="gallery.html">Galeri</a>
+        <a href="index.html#features">Fitur</a>
+        <a href="index.html#about">Tentang</a>
+        <a href="index.html#contact">Kontak</a>
+        <button id="themeToggle" class="btn btn-ghost" aria-label="Toggle theme">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Blog</h1>
+        <p class="muted">Artikel dan pembaruan singkat</p>
+      </div>
+    </section>
+
+    <section class="posts container">
+      <article class="post">
+        <h2>Selamat datang di blog BP</h2>
+        <p class="muted">18 Desember 2025 — Pengantar</p>
+        <p>Ini adalah contoh posting. Anda dapat menambahkan posting statis atau menghubungkan CMS seperti Netlify CMS, Contentful, atau Git-based workflow.</p>
+        <p><a class="btn btn-outline" href="#">Baca selengkapnya</a></p>
+      </article>
+
+      <article class="post">
+        <h2>Membangun UI sederhana</h2>
+        <p class="muted">10 Desember 2025</p>
+        <p>Tips dan trik untuk desain yang konsisten dan ringan.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> BP — Semua hak dilindungi.</p>
+      <p class="muted">Dibuat dengan ❤️</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
