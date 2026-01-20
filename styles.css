@@ -95,7 +95,7 @@ img {
   width: 44px;
   height: 44px;
   background: transparent; /* Background dihilangkan */
-  border: 1px solid #313131; /* Menggunakan warna pilihan Anda sebelumnya */
+  border: 1px solid #000000; /* Menggunakan warna pilihan Anda sebelumnya */
   border-radius: 12px;
   padding: 10px;
   cursor: pointer;
@@ -111,9 +111,6 @@ img {
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-toggle:hover {
-  border-color: rgba(0, 242, 255, 0.4);
-}
 
 
 /* Animasi ke X saat menu terbuka */
