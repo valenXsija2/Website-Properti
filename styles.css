@@ -220,12 +220,21 @@ img {
 }
 
 .feature {
-  background: var(--card);
+  background: rgba(255, 255, 255, 0.6);
   padding: 18px;
   border-radius: 12px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 0.5px solid #556475;
   box-shadow: 0 6px 20px rgba(16, 24, 40, 0.04);
+  transition: all 0.3s ease;
 }
 
+.feature:hover {
+  background: rgba(255, 255, 255, 0.8);
+  transform: translateY(-3px);
+  border-color: #3f4a57;
+}
 .feature h3 {
   margin-top: 0;
 }
