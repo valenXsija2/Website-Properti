@@ -393,16 +393,16 @@ textarea {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 100%; /* Pas di bawah header */
     left: 0;
     right: 0;
-    background: rgba(15, 23, 36, 0.95); /* Warna gelap semi-transparan */
+    top: 100%;
+    padding: 24px;
+    background: rgba(15, 23, 36, 0.95);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
-    padding: 24px;
-    gap: 20px;
+    border-bottom: 2px solid rgba(0, 242, 255, 0.3);  
     
-    /* Animasi Sembunyi */
+    /* Animasi sembunyi */
     opacity: 0;
     visibility: hidden;
     transform: translateY(-10px);
@@ -413,44 +413,6 @@ textarea {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
-  }
-
-  /* Link warna putih agar kontras di bg gelap */
-  .nav a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
-    transition: opacity 0.3s;
-  }
-
-  .nav a:hover {
-    opacity: 0.7;
-  }
-
-  /* Toggle Button Customization */
-  .nav-toggle {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-  }
-
-  .hamburger-line {
-    width: 100%;
-    height: 3px;
-    background-color: #313131; /* Hitam saat header transparan */
-    transition: all 0.3s ease;
-  }
-
-  /* Ubah warna toggle & logo filter jika header aktif */
-  .site-header.header-active .hamburger-line {
-    background-color: rgba(15, 23, 36, 0.95);
   }
   
 }
