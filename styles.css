@@ -112,8 +112,7 @@ img {
 }
 
 .nav-toggle:hover {
-  border-color: var(--neon-cyan);
-  box-shadow: 0 0 15px rgba(0, 242, 255, 0.4);
+  border-color: rgba(0, 242, 255, 0.4);
 }
 
 
