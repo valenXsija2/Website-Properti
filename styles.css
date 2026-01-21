@@ -378,6 +378,12 @@ textarea {
    MOBILE NAV
 ===================== */
 @media (max-width: 720px) {
+  .features {
+    padding: 0px 0;
+  }
+  .muted {
+    font-size: 14px;
+  }
   .container {
     padding-inline: 20px;
   }
