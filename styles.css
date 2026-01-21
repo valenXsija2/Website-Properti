@@ -384,6 +384,21 @@ textarea {
   .features-inline {
     flex-direction: column;
   }
+  .feature-inline img {
+    width: 50px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0px;
+    margin-left: 10px;
+  }
+  .feature-inline {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: var(--card);
+    padding: 6px;
+    border-radius: 10px;
+  }
   .nav-toggle {
     display: flex; /* Muncul hanya di layar <= 720px */
   }
