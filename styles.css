@@ -55,10 +55,20 @@ img {
   backdrop-filter: blur(6px);
   background: transparent;
 }
-
+.logo-light {
+  display: none;
+}
 /* State Aktif saat Toggle dipencet */
+.site-header.header-active .logo-light {
+  display: block;
+}
+.site-header.header-active .logo-dark {
+  display: none;
+}
+
 .site-header.header-active {
   background: rgba(15, 23, 36, 0.95); /* Warna #313131 */
+  border-bottom: 3px solid #0077ff;
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
 }
@@ -68,13 +78,6 @@ img {
   justify-content: space-between;
   align-items: center;
   padding: 15px 0;
-}
-
-.header-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 18px 0;
 }
 
 .nav {
@@ -115,6 +118,7 @@ img {
 
 /* Animasi ke X saat menu terbuka */
 [aria-expanded="true"] .hamburger-line:nth-child(1) {
+  background-color: #ffffff;
   transform: translateY(8px) rotate(45deg);
 }
 
@@ -124,10 +128,26 @@ img {
 }
 
 [aria-expanded="true"] .hamburger-line:nth-child(3) {
+  background-color: #ffffff;
   transform: translateY(-8px) rotate(-45deg);
 }
 .nav.open {
   right: 0; /* Slide-in effect */
+}
+.nav.open a {
+  color: #5f89c9;         /* Sesuaikan warna teks */
+  width: 100%;
+  border-bottom: 2px solid #0a2d46;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 12px 0;
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+.nav.open a:has(img) {
+    border-bottom: none;
+    width: auto; /* Kembalikan lebar icon secukupnya saja */
+    margin-top: 10px;
 }
 /* =====================
    BUTTONS
@@ -378,6 +398,9 @@ textarea {
    MOBILE NAV
 ===================== */
 @media (max-width: 720px) {
+  .hero {
+    padding: 22px 0;
+  }
   .features {
     padding: 0px 0;
   }
@@ -417,10 +440,10 @@ textarea {
     right: 0;
     top: 100%;
     padding: 24px;
-    background: rgba(15, 23, 36, 0.95);
+    background: rgba(19, 31, 50, 0.95);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
-    border-bottom: 2px solid rgba(0, 242, 255, 0.3);  
+    border-bottom: 2px solid rgb(7, 50, 52);  
     
     /* Animasi sembunyi */
     opacity: 0;
