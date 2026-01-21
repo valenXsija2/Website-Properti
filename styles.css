@@ -95,7 +95,7 @@ img {
   width: 44px;
   height: 44px;
   background: transparent; /* Background dihilangkan */
-  border: 1px solid #000000; /* Menggunakan warna pilihan Anda sebelumnya */
+  border: 0px solid #000000; /* Menggunakan warna pilihan Anda sebelumnya */
   border-radius: 12px;
   padding: 10px;
   cursor: pointer;
@@ -378,6 +378,9 @@ textarea {
    MOBILE NAV
 ===================== */
 @media (max-width: 720px) {
+  .container {
+    padding-inline: 20px;
+  }
   .features-inline {
     flex-direction: column;
   }
