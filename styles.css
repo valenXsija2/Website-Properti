@@ -177,6 +177,7 @@ img {
   background: transparent;
   border: 1px solid rgba(0, 0, 0, 0.08);
   color: var(--text);
+  transition:0.4s ease, transform 0.4s ease, opacity 0.4s ease;
 }
 
 .btn-outline:hover {
@@ -246,7 +247,7 @@ img {
 .features-inline {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 14px;
   margin-top: 18px;
 }
 
@@ -260,8 +261,8 @@ img {
 }
 
 .feature-inline img {
-  width: 72px;
-  height: 54px;
+  width: 60px;
+  height: auto;
   object-fit: cover;
   border-radius: 8px;
 }
@@ -290,10 +291,11 @@ img {
   border-radius: 12px;
   box-shadow: 0 6px 20px rgba(16, 24, 40, 0.04);
   border-color: none;
+  transition: 1s ease, transform 0.4s ease;
 }
 .feature:hover {
   background: rgba(255, 255, 255, 0.8);
-  transform: translateY(-3px);
+  transform: translateY(-4px);
   border-color: #3f4a57;
 }
 
@@ -304,6 +306,10 @@ img {
 /* =====================
    ABOUT
 ===================== */
+.about .section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
 .about {
   padding: 40px 0;
   background: linear-gradient(
@@ -312,9 +318,63 @@ img {
     rgba(79, 70, 229, 0.02)
   );
 }
-
+.about-inner {
+  justify-content: space-between;
+  gap: 20px;
+  display: flex;
+  align-items: center;
+}
+.about-inner .muted {
+  flex: 1;
+  font-size: 20px;
+  max-width: 45%;
+}
+.about-inner .image {
+  flex: 1;
+  max-width: 40%;
+}
 .muted {
   color: var(--muted);
+}
+/* Pastikan konten teks tersusun vertikal */
+.about-content {
+    flex: 1;
+    max-width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Memberi jarak antar elemen (h1, p, dan icons) */
+}
+
+/* Mengatur judul kecil di atas paragraph */
+.content-title {
+    font-size: 24px;
+    margin-bottom: -5px; /* Opsional: merapatkan dengan paragraph */
+    color: var(--primary); /* Gunakan warna brand Anda */
+}
+
+/* Reset atau sesuaikan .muted agar tidak bentrok */
+.about-inner .muted {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 100%; /* Ubah ke 100% karena container luarnya sudah dibatasi */
+}
+
+/* Styling Icon Sosmed */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icons img {
+    width: 30px; /* Ukuran logo sosmed */
+    height: 30px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.social-icons img:hover {
+    transform: translateY(-3px); /* Efek sedikit melompat saat di-hover */
 }
 
 /* =====================
@@ -398,6 +458,26 @@ textarea {
    MOBILE NAV
 ===================== */
 @media (max-width: 720px) {
+  .about-inner .image {
+    flex: 1;
+    max-width: 100%;
+  }
+  .about-inner {
+    justify-content: space-between;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about .section-title {
+    padding: 22px 0;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .about {
+    padding: 22px 0;
+  }
   .hero {
     padding: 22px 0;
   }
@@ -464,6 +544,10 @@ textarea {
     MOBILE LAYOUT (900px)
 ===================== */
 @media (max-width: 900px) {
+  .about-content {
+    max-width: 100%;
+    flex-direction: column;
+  }
   .hero-inner {
     flex-direction: column;
     text-align: left; /* Opsional: agar teks ke tengah saat mobile */
